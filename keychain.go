@@ -651,3 +651,47 @@ func GetGenericPassword(service string, account string, label string, accessGrou
 	}
 	return nil, nil
 }
+
+/*
+	Added code by Fordefi.
+*/
+
+// SetMatchSearchList
+func (k *Item) SetMatchSearchList(kc Keychain) {
+	panic("not implemented")
+}
+
+// UseKeychain
+func (k *Item) UseKeychain(kc Keychain) {
+	panic("not implemented")
+}
+
+type Access struct {
+	Label               string
+	TrustedApplications []string
+}
+
+// SetAccess
+func (k *Item) SetAccess(a *Access) {
+	panic("not implemented")
+}
+
+type Keychain struct {
+}
+
+func NewWithPath(path string) Keychain {
+	panic("not implemented")
+}
+
+func NewKeychain(path string, password string) (Keychain, error) {
+	panic("not implemented")
+}
+
+// NewKeychainWithPrompt creates a new Keychain and prompts user for password
+func NewKeychainWithPrompt(path string) (Keychain, error) {
+	panic("not implemented")
+}
+
+func (kc Keychain) Status() error {
+	panic("not implemented")
+}
